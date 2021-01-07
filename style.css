@@ -6,6 +6,8 @@
 
 a {
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .landing {
@@ -34,8 +36,10 @@ nav {
 
 .nav-links li {
 	padding-left: 10rem;
-	font-size: 1.2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
+
 
 #logo {
     font-family: mrs-eaves-roman-all-small-ca, sans-serif;
