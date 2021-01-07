@@ -45,6 +45,7 @@ nav {
 
 .nav-links {
 	display: flex;
+	justify-content: flex-end;
 	list-style: none;
 	font-family: mrs-eaves-roman-all-small-ca, sans-serif;
 	font-weight: 400;
@@ -53,7 +54,7 @@ nav {
 }
 
 .nav-links li {
-	padding-left: 10rem;
+	padding-left: 24px;
 	font-size: 1.2rem;
 	text-decoration: none;
 }
