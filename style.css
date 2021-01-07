@@ -29,7 +29,7 @@ a:hover::after {
 
 .landing {
 	min-height: 100vh;
-	background: url('./header.jpg');
+	background: url('./photos/header.jpg');
 	background-size: cover;
 	padding: 0rem, 5rem;
 }
@@ -75,6 +75,18 @@ nav {
 	font-style: italic;
 	font-size: 5rem;
 	color: #383d3b;
+}
+
+.slogan {
+    position: absolute;
+	top: 41%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+    font-family: henriette, sans-serif;
+	font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+    color: #2b302e;
 }
 
 .intro {
