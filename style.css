@@ -5,9 +5,26 @@
 }
 
 a {
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+}
+
+a::after {
+	content: '';
+	width: 0px;
+	height: 1px;
+	display: block;
+	background: black;
+	transition: 300ms;
+    position: relative;
+    left: 50%;
+}
+
+a:hover::after {
+	transform: translate(-50%, 0);
+	width: 100%;
 }
 
 .landing {
@@ -21,82 +38,85 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-    min-height: 5vh;
-    background-color: #F9F7F3;
+	min-height: 5vh;
+	background-color: #f9f7f3;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nav-links {
 	display: flex;
-    list-style: none;
-    font-family: mrs-eaves-roman-all-small-ca, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0 32px;
+	list-style: none;
+	font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0 32px;
 }
 
 .nav-links li {
 	padding-left: 10rem;
-    font-size: 1.2rem;
-    text-decoration: none;
+	font-size: 1.2rem;
+	text-decoration: none;
 }
 
-
 #logo {
-    font-family: mrs-eaves-roman-all-small-ca, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0 32px;
+	font-family: mrs-eaves-roman-all-small-ca, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0 32px;
 }
 
 .big-text {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    font-family: henriette, sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 5rem; 
-    color: #383D3B;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	font-family: henriette, sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 5rem;
+	color: #383d3b;
 }
 
 .intro {
-    background: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .slider {
-    background: wheat;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
+	background: wheat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateY(100%);
 }
 
 .intro-text {
-    color: rgb(201, 201, 201);
-    font-family: museo-slab, serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 3rem;
+	color: rgb(201, 201, 201);
+	font-family: museo-slab, serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 3rem;
 }
 
 .hide {
-    background: black;
-    overflow: hidden;
+	background: black;
+	overflow: hidden;
 }
 
 .hide span {
-    transform: translateY(100%);
-    display: inline-block;
+	transform: translateY(100%);
+	display: inline-block;
 }
 
+.active {
+	text-decoration: underline;
+}
