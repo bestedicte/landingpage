@@ -11,8 +11,8 @@ a {
 	color: inherit;
 }
 
-a::after {
-	content: '';
+a::after{
+    content: '';
 	width: 0px;
 	height: 1px;
 	display: block;
@@ -118,5 +118,10 @@ nav {
 }
 
 .active {
-	text-decoration: underline;
+    border-bottom: 1px solid black;
+    margin-bottom: 1px;
+}
+
+.active::after {
+    display: none;
 }
